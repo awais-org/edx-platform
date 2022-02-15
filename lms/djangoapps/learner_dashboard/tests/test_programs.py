@@ -347,4 +347,3 @@ class TestProgramDetailsFragmentView(SharedModuleStoreTestCase, ProgramCacheMixi
         """
         response = self.client.get(self.url)
         self.assertContains(response, 'programTabViewEnabled: true',)
-        self.assertContains(response, 'discussionFragment: {"configured": true, "iframe": ""')
