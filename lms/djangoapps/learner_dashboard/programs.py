@@ -150,10 +150,10 @@ class ProgramDetailsFragmentView(EdxFragmentView):
 
         def program_tab_view_enabled() -> bool:
             return program_tab_view_is_enabled() and (
-                program_discussion_lti.is_configured or
-                program_live_lti.is_configured or
                 industry_pathways or
-                credit_pathways
+                credit_pathways or
+                program_discussion_lti.is_configured or
+                program_live_lti.is_configured
             )
 
         context = {
